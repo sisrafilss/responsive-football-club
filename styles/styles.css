@@ -11,13 +11,19 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
   font-size: 64px;
   color: #fff;
   margin-bottom: 27px;
   font-weight: 700;
+}
+h2 {
+  font-size: 48px;
+  color: #0a0826;
+  margin-bottom: 8px;
 }
 h3 {
   font-size: 28px;
@@ -85,6 +91,8 @@ p {
 ----------------------------------- */
 .player-blogs {
   width: 1070px;
+  display: flex;
+  justify-content: center;
 }
 .blogs {
   display: grid;
@@ -94,9 +102,66 @@ p {
 }
 .blog {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  padding: 15px;
+  padding: 15px 15px 33px 15px;
 }
 .blog-thumbnail {
   width: 300px;
   height: 256px;
 }
+
+/* ----------------------------------
+    Highlight section styles
+----------------------------------- */
+#highlight-wraper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 66px;
+}
+.hightlight-info {
+  margin-top: 55px;
+  margin-left: 50px;
+}
+.hightlight-info p {
+  margin-bottom: 24px;
+}
+.highlight-thumbnail img {
+  width: 567px;
+  height: 427px;
+}
+
+/* ----------------------------------
+    Footer section styles
+----------------------------------- */
+#footer {
+  padding-top: 158px;
+  padding-bottom: 63px;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img {
+  width: 483.87px;
+  height: 110px;
+}
+.social-icons {
+  margin-bottom: 20px;
+}
+.social-icons .fab {
+  font-size: 25px;
+  background-color: #e7e7e8;
+  padding: 7px;
+  border-radius: 50%;
+  color: #969bab;
+  margin-right: 14px;
+}
+.copyright {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* ----------------------------------
+    Responsive styles
+----------------------------------- */
+
