@@ -9,14 +9,34 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+main {
+  display: flex;
+  justify-content: center;
+}
 h1 {
   font-size: 64px;
   color: #fff;
   margin-bottom: 27px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+  color: #18191f;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+  font-weight: 400;
 }
 .container {
   width: 1170px;
   margin-top: 70px;
+  display: flex;
+  justify-content: center;
 }
 .btn {
   padding: 10px 24px;
@@ -58,4 +78,25 @@ h1 {
 .banner-image img {
   width: 556.01px;
   height: 438px;
+}
+
+/* ----------------------------------
+    Players blog styles
+----------------------------------- */
+.player-blogs {
+  width: 1070px;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+.blog {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.blog-thumbnail {
+  width: 300px;
+  height: 256px;
 }
