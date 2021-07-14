@@ -1,5 +1,60 @@
 /* ----------------------------------
     Responsive styles
 ----------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-info {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .player-blogs {
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-thumbnail {
+    width: 300px;
+    height: 256px;
+  }
+  #highlight-wraper {
+    flex-direction: column;
+  }
+  .b {
+    width: 100%;
+  }
+  .hightlight-info {
+    margin-bottom: 30px;
+  }
+  .hightlight-info h2 {
+    font-size: 30px;
+  }
+  .highlight-thumbnail img {
+    width: 328px;
+    height: 248px;
+  }
+  #footer {
+    width: 100%;
+  }
+  .logo img {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+  }
 }

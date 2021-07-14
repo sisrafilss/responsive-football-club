@@ -39,10 +39,11 @@ p {
   font-weight: 400;
 }
 .container {
-  width: 1170px;
+  padding-right: 7%;
+  padding-left: 7%;
   margin-top: 70px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .btn {
   padding: 10px 24px;
@@ -61,21 +62,23 @@ p {
   background-color: #2d25a0;
   padding-top: 42px;
   padding-bottom: 86px;
-  display: flex;
-  justify-content: center;
+
+  width: 100%;
 }
 .header-wrap {
-  width: 1170px;
+  padding-right: 7%;
+  padding-left: 7%;
 }
 /* Navigation styles */
 .menu {
 }
 /* banner styels */
 .top-banner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 102px;
+  display: flex;
   margin-top: 67px;
+}
+.banner-info {
+  margin-right: 102px;
 }
 .top-banner .banner-image:hover img {
   transform: scale(1.3) skew(-5deg);
@@ -91,8 +94,6 @@ p {
 ----------------------------------- */
 .player-blogs {
   width: 1070px;
-  display: flex;
-  justify-content: center;
 }
 .blogs {
   display: grid;
@@ -101,6 +102,9 @@ p {
   grid-row-gap: 27px;
 }
 .blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px 15px 33px 15px;
 }
@@ -113,13 +117,24 @@ p {
     Highlight section styles
 ----------------------------------- */
 #highlight-wraper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 66px;
+  grid-column-gap: 66px; */
+  display: flex;
+}
+.b {
+  width: 1170px;
+}
+.a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 .hightlight-info {
   margin-top: 55px;
   margin-left: 50px;
+  margin-right: 66px;
 }
 .hightlight-info p {
   margin-bottom: 24px;
@@ -198,6 +213,7 @@ p {
 #footer {
   padding-top: 158px;
   padding-bottom: 63px;
+  width: 1170px;
 }
 .footer-wrapper {
   display: flex;
